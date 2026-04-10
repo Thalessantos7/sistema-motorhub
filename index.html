@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro - MotorHub</title>
+</head>
+
+<body>
+
+    <header id="topo">
+        <h1 id="logo">MotorHub</h1>
+        <p class="subtitulo">Faça seu cadastro e tenha uma ótima experiência!</p>
+
+        <nav class="menu">
+            <a href="paginainicial.html">Início</a>
+            <a href="#">Veículos</a>
+            <a href="#">Contato</a>
+            <a href="teladelogin.html">Login</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <form action="teladelogin.html">
+            <h2>Cadastro</h2>
+
+            <label for="nome">Nome</label>
+            <input id="nome" placeholder="Digite seu nome" type="text" name="nome" required>
+
+            <label for="email">E-mail</label>
+            <input id="email" placeholder="Digite seu e-mail" type="email" name="email" required>
+
+            <label for="senha">Senha</label>
+            <input id="senha" placeholder="Digite sua senha" type="password" name="senha" required>
+
+            <label for="confirmarsenha">Confirmar senha</label>
+            <input type="password" placeholder="Confirme sua senha" required>
+
+            <label for="datadenascimento">Data de nascimento</label>
+            <input id="datadenascimento" type="date" name="datadenascimento" required>
+            
+            <div class="termos">
+                <input type="checkbox" id="termos" required>
+                <label for="termos">Aceito os termos de uso</label>
+            </div>
+            
+            <button type="submit">Fazer cadastro</button>
+        </form>
+    </main>
+
+</body>
+
+</html>

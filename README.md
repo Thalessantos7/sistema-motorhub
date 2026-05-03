@@ -1,5 +1,5 @@
 # 🚗 Sistema MotorHub
-**🌐 Acesse o site:** https://thalessantos7.github.io/sistema-motorhub
+**🌐 Acesse o site:** https://thalessantos7.github.io/sistema-motorhub/
 
 **MotorHub** é um marketplace de serviços automotivos sob demanda, focado em cidades médias como Patos e região. O projeto surge da falta de transparência e organização no setor automotivo local, onde clientes não sabem em qual oficina confiar e os agendamentos são feitos de forma desorganizada.
 

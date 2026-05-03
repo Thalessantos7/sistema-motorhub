@@ -2,22 +2,28 @@
 <html lang="pt-BR">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="teladelogin.css">
     <title>Login - MotorHub</title>
+
 </head>
 
 <body>
 
     <header id="topo">
+
         <h1 id="logo">MotorHub</h1>
-        <p class="subtitulo">Faça login para acessar sua conta.</p>
+        
     </header>
 
     <main>
-        <form action="paginainicial.html">
+
+        <form action="../Página Inicial/paginainicial.html">
+            
             <h2>Login</h2>
+            <p class="subtitulo">Faça login para acessar sua conta.</p>
 
             <label for="email">E-mail</label>
             <input id="email" placeholder="Digite seu e-mail" type="email" name="email" required>
@@ -28,18 +34,24 @@
             
 
             <div class="lembrar">
+
                 <input type="checkbox" id="lembrar">
                 <label for="lembrar">Lembrar de mim</label>
+
             </div>
 
             <button type="submit">Fazer login</button>
 
-            <p class="cadastro-link">
-                Não tem conta?<a href="index.html">Cadastre-se</a>
+            <p class="cadastro">
+
+                Não tem conta?<a href="../Tela de Cadastro/index.html" class="cadastro-link">Cadastre-se</a>
+
             </p>
 
             <a href="#" class="esquecisenha">Esqueci minha senha</a>
+
         </form>
+
     </main>
 
 </body>

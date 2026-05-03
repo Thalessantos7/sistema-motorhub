@@ -2,31 +2,128 @@
 <html lang="pt-BR">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="paginainicial.css">
     <title>Página Inicial - MotorHub</title>
+
 </head>
 
 <body>
+
     <header id="topo">
+
         <h1 id="logo">MotorHub</h1>
-        <p class="subtitulo">Seu hub automotivo para explorar e agendar com facilidade.</p>
 
         <nav class="menu">
-            <a href="#topo">Início</a>
-            <a href="#">Veículos</a>
-            <a href="#">Meus agendamentos</a>
-            <a href="teladelogin.html">Sair</a>
+
+            <a href="#boas-vindas" class="menu">Início</a>
+            <a href="#" class="menu">Veículos</a>
+            <a href="#agendamentos" class="menu">Meus agendamentos</a>
+            <a href="../Tela de Login/teladelogin.html" class="menu">Sair</a>
+
         </nav>
+
     </header>
 
     <main>
-        <section class="boas-vindas">
-            <h2>Bem-vindo ao MotorHub!</h2>
-            <p>Encontre veículos, visualize opções e acompanhe seus agendamentos em um só lugar.</p>
+
+        <section>
+
+            <div id="boas-vindas">
+
+                <h2>Bem-vindo ao MotorHub!</h2>
+                <p>Encontre oficinas, visualize opções e acompanhe seus agendamentos em um só lugar.</p>
+
+            </div>
+
         </section>
+
+        <section class="area-cards">
+
+            <div class="area-pesquisa">
+            
+                <input type="search" id="barra-pesquisa" placeholder="🔍 Encontre oficinas próximas...">
+            
+            </div>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <h2>CK AUTOCENTER</h2>
+                    <img src="../assets/CK AUTOCENTER.jpg" alt="Logo da CK AUTOCENTER">
+                    <p>📍 São Sebastião / Patos-PB</p>
+                    <span>⭐ 5,0</span>
+                    <button>Ver informações</button>
+
+                </div>
+
+                <div class="card">
+                
+                    <h2>Auto Mecânica Do Sapo</h2>
+                    <img src="../assets/Auto Mecânica Do Sapo.jpg" alt="Logo da Auto Mecânica Do Sapo">
+                    <p>📍 Salgadinho / Patos-PB</p>
+                    <span>⭐ 4,4</span>
+                    <button>Ver informações</button>
+
+                </div>
+
+                <div class="card">
+                    
+                    <h2>Oficina Lisboa</h2>
+                    <img src="../assets/Oficina Lisboa.jpg" alt="Logo da Oficina Lisboa">
+                    <p>📍 Belo Horizonte / Patos-PB</p>
+                    <span>⭐ 4,7</span>
+                    <button>Ver informações</button>
+
+                </div>
+
+                <div class="card">
+                    
+                    <h2>Só Baterias</h2>
+                    <img src="../assets/Só Baterias.jpg" alt="Logo da Só Baterias">
+                    <p>📍 Centro / Patos-PB</p>
+                    <span>⭐ 5,0</span>
+                    <button>Ver informações</button>
+
+                </div>
+
+                <div class="card">
+                    
+                    <h2>Oficina De Molas São José</h2>
+                    <img src="../assets/Oficina De Molas São José.jpg" alt="Logo da Oficina De Molas São José">
+                    <p>📍 Centro / Patos-PB</p>
+                    <span>⭐ 4,3</span>
+                    <button>Ver informações</button>
+
+                </div>
+
+                <div class="card">
+                    
+                    <h2>Oficina Top Car</h2>
+                    <img src="../assets/Oficina Top Car.jpg" alt="Logo da Oficina Top Car">
+                    <p>📍 Morro / Patos-PB</p>
+                    <span>⭐ 4,0</span>
+                    <button>Ver informações</button>
+
+                </div>
+
+            </div>
+
+        </section>
+        
+
+        <section id="agendamentos">
+
+            <h2>Seus Agendamentos</h2>
+            <p>Você não possui agendamentos no momento.</p>
+
+        </section>
+
     </main>
+    
 </body>
 
 </html>

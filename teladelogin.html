@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="teladelogin.css">
+    <link rel="stylesheet" href="style.css">
     <title>Login - MotorHub</title>
 
 </head>
@@ -15,6 +15,7 @@
     <header id="topo">
 
         <h1 id="logo">MotorHub</h1>
+        <p id="subtitulo">Seu hub automotivo favorito.</p>
         
     </header>
 
@@ -23,16 +24,32 @@
         <form action="paginainicial.html">
             
             <h2>Login</h2>
-            <p class="subtitulo">Faça login para acessar sua conta.</p>
+            <p>Faça login para acessar sua conta.</p>
 
-            <label for="email">E-mail</label>
-            <input id="email" placeholder="Digite seu e-mail" type="email" name="email" required>
+            <div class="area-input">
 
-            <label for="senha">Senha</label>
-            <input id="senha" placeholder="Digite sua senha" type="password" name="senha" required>
+                <label for="email">E-mail</label>
 
+                <div class="input">
+
+                    <input id="email" placeholder="Digite seu e-mail" type="email" name="email" required>
+
+                </div>
+                
+            </div>
             
+            <div class="area-input">
 
+                <label for="senha">Senha</label>
+
+                <div class="input">
+
+                    <input id="senha" placeholder="Digite sua senha" type="password" name="senha" required>
+
+                </div>
+                
+            </div>
+            
             <div class="lembrar">
 
                 <input type="checkbox" id="lembrar">
@@ -40,15 +57,20 @@
 
             </div>
 
-            <button type="submit">Fazer login</button>
+            <div class="area-botao-login">
 
-            <p class="cadastro">
+               <button type="submit" class="botao-login">Fazer login</button>
 
-                Não tem conta?<a href="index.html" class="cadastro-link">Cadastre-se</a>
+            </div>
 
-            </p>
+            <div class="cadastrar-se">
 
-            <a href="#" class="esquecisenha">Esqueci minha senha</a>
+                <p>Não tem conta? </p>
+                <a href="index.html">Cadastre-se</a>
+
+            </div>
+
+            <a href="#" class="esqueci-senha">Esqueci minha senha</a>
 
         </form>
 

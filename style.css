@@ -27,7 +27,6 @@ main {
 
     display: flex;
     flex-direction: column;
-    gap: 10px;
     background: #111111;
     height: 150px;
     display: flex;
@@ -37,12 +36,16 @@ main {
 
 }
 
-.menu:hover {
+#topo-pagina-inicial {
 
-    color: #FF0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111111;
+    height: 150px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
 
 }
-
 
 #logo {
     
@@ -51,10 +54,27 @@ main {
 
 }
 
+#logo-pagina-inicial {
+
+    color: #ff0000;
+    font-size: 70px;
+    position: absolute;
+    left: 40px;
+
+}
+
 #subtitulo {
 
     color: #ffffff;
-    margin-bottom: 10px;
+
+}
+
+#subtitulo-pagina-inicial {
+
+    color: #ffffff;
+    position: absolute;
+    left: 100px;
+    top: 110px;
 
 }
 
@@ -125,6 +145,12 @@ form h2 {
     border: none;
     outline: none;
     font-size: 20px;
+
+}
+
+.input i {
+
+    margin-right : 5px;
 
 }
 
@@ -272,20 +298,25 @@ form h2 {
 
 }
 
-.menu {
+.menu-container {
 
     display: flex;
-    gap: 20px;
-    font-size: 20px;
-    text-decoration: none;
-    color: #ff0000;
+    gap: 50px;
 
 }
 
-.menu:hover {
+.menu-container a {
 
-    color: #505050;
-    transform: translateX(2px);
+    color: #ff0000;
+    text-decoration: none;
+    font-size: 30px;
+
+}
+
+.menu-container a:hover {
+
+    color: #ffffff;
+    transform: translateY(2px);
 
 }
 
@@ -425,4 +456,8 @@ form h2 {
     color: #FFFFFF;
     font-size: 20px;
 
+}
+
+.formulario-cadastro {
+    margin: 50px;
 }

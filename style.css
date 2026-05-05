@@ -10,18 +10,10 @@ body {
 
     font-family: 'Times New Roman', sans-serif;
     background: #1A1A1A;
-    
-}
-
-main {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    gap: 50px;
 
 }
+
+/* Header */
 
 #topo {
 
@@ -33,6 +25,10 @@ main {
     align-items: center;
     justify-content: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
 
 }
 
@@ -44,6 +40,10 @@ main {
     background: #111111;
     height: 150px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
 
 }
 
@@ -78,226 +78,6 @@ main {
 
 }
 
-form p {
-
-    display: flex;
-    justify-content: center;
-    color: #ffffff;
-
-}
-
-form {
-
-    display: flex;
-    background: #111111;
-    flex-direction: column;
-    width: 600px;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
-    
-}
-
-form h2 {
-
-    display: flex;
-    justify-content: center;
-    color: #ff0000;
-    font-size: 30px;
-
-}
-
-.termos {
-
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 12px;
-
-}
-
-.termos input {
-
-    width: auto;
-    margin-bottom: 0;
-
-}
-
-.termos label {
-
-    margin-bottom: 0;
-    color: #F4F4F4;
-    font-weight: 400;
-    
-}
-
-.input {
-
-    border: 2px solid black;
-    border-radius: 12px;
-    padding: 10px;
-    background: white;
-
-}
-
-.input input {
-
-    border: none;
-    outline: none;
-    font-size: 20px;
-
-}
-
-.input i {
-
-    margin-right : 5px;
-
-}
-
-.area-input {
-
-    margin: 10px;
-
-}
-
-.botao-cadastro {
-
-    background: #505050;
-    border-radius: 12px;
-    width: 250px;
-    height: 40px;
-    color: #ffffff;
-    font-size: 20px;
-
-}
-
-.botao-cadastro:hover {
-
-    background: #ff0000;
-    transform: translateY(2px);
-
-}
-
-.area-botao-cadastro {
-
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-
-}
-
-.area-input label {
-
-    color: #ff0000;
-    font-size: 20px;
-
-}
-
-.termos {
-
-    margin-left: 20px;
-
-}
-
-.fazerlogin {
-
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    justify-content: center;
-
-}
-
-.fazerlogin a {
-
-    color: #ff0000;
-    text-decoration: none;
-
-}
-
-.fazerlogin a:hover {
-
-    transform: translateY(2px);
-
-}
-
-.area-botao-login {
-
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-
-}
-
-.botao-login {
-
-    background: #505050;
-    border-radius: 12px;
-    width: 250px;
-    height: 40px;
-    color: #ffffff;
-    font-size: 20px;
-
-}
-
-.botao-login:hover {
-
-    background: #ff0000;
-    transform: translateY(2px);
-
-}
-
-.esqueci-senha {
-
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    color: #505050;
-
-}
-
-.esqueci-senha:hover {
-
-    transform: translateY(2px);
-
-}
-
-.cadastrar-se {
-
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    justify-content: center;
-
-}
-
-.cadastrar-se a {
-
-    color: #ff0000;
-    text-decoration: none;
-
-}
-
-.cadastrar-se a:hover {
-
-    transform: translateY(2px);
-
-}
-
-.lembrar {
-
-    display: flex;
-    gap: 10px;
-    margin-left: 20px;
-
-}
-
-.lembrar label {
-
-    color: #ffffff;
-
-}
-
 .menu-container {
 
     display: flex;
@@ -316,7 +96,31 @@ form h2 {
 .menu-container a:hover {
 
     color: #ffffff;
-    transform: translateY(2px);
+    transform: translateY(-5px);
+
+}
+
+/* Main */
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 50px;
+
+}
+
+.formulario-container {
+    
+    margin: 50px;
+
+}
+
+.container-main {
+
+    padding-top: 150px;
 
 }
 
@@ -342,6 +146,235 @@ form h2 {
 
 }
 
+form {
+
+    display: flex;
+    background: #111111;
+    flex-direction: column;
+    width: 500px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    
+}
+
+form h2 {
+
+    display: flex;
+    justify-content: center;
+    color: #ff0000;
+    font-size: 30px;
+
+}
+
+form p {
+
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+
+}
+
+.area-input {
+
+    margin: 10px;
+
+}
+
+.area-input label {
+
+    color: #ff0000;
+    font-size: 20px;
+
+}
+
+.input {
+
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 10px;
+    background: white;
+
+}
+
+.input i {
+
+    margin-right : 5px;
+
+}
+
+.input input {
+
+    border: none;
+    outline: none;
+    font-size: 20px;
+
+}
+
+.termos {
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    margin-left: 20px;
+
+}
+
+.termos input {
+
+    width: auto;
+    margin-bottom: 0;
+
+}
+
+.termos label {
+
+    margin-bottom: 0;
+    color: #F4F4F4;
+    font-weight: 400;
+    
+}
+
+.area-botao-cadastro {
+
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+.botao-cadastro {
+
+    background: #505050;
+    border-radius: 12px;
+    width: 250px;
+    height: 40px;
+    color: #ffffff;
+    font-size: 20px;
+
+}
+
+.botao-cadastro:hover {
+
+    background: #ff0000;
+    transform: translateY(-5px);
+
+}
+
+.fazerlogin {
+
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+
+}
+
+.fazerlogin a {
+
+    color: #ff0000;
+    text-decoration: none;
+
+}
+
+.fazerlogin a:hover {
+
+    transform: translateY(-5px);
+
+}
+
+.lembrar {
+
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+
+}
+
+.lembrar label {
+
+    color: #ffffff;
+
+}
+
+.area-botao-login {
+
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+.botao-login {
+
+    background: #505050;
+    border-radius: 12px;
+    width: 250px;
+    height: 40px;
+    color: #ffffff;
+    font-size: 20px;
+
+}
+
+.botao-login:hover {
+
+    background: #ff0000;
+    transform: translateY(-5px);
+
+}
+
+.cadastrar-se {
+
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+
+}
+
+.cadastrar-se a {
+
+    color: #ff0000;
+    text-decoration: none;
+
+}
+
+.cadastrar-se a:hover {
+
+    transform: translateY(-5px);
+
+}
+
+.esqueci-senha {
+
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #505050;
+
+}
+
+.esqueci-senha:hover {
+
+    transform: translateY(-5px);
+
+}
+
+.area-cards {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #111111;
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+
+}
+
 .area-pesquisa {
 
     display: flex;
@@ -353,7 +386,7 @@ form h2 {
 #barra-pesquisa {
 
     width: 500px;
-    height: 30px;
+    height: 40px;
     border-radius: 12px;
 
 }
@@ -383,6 +416,12 @@ form h2 {
 
 }
 
+.card:hover {
+
+    transform: translateY(-5px);
+
+}
+
 .card h2 {
 
     color: #FF0000;
@@ -393,12 +432,6 @@ form h2 {
 .card p, span {
 
     color: #FFFFFF;
-
-}
-
-.card:hover {
-
-    transform: translateY(2px);
 
 }
 
@@ -416,21 +449,7 @@ form h2 {
 .card button:hover {
 
     background: #FF0000;
-    transform: translateY(2px);
-
-}
-
-.area-cards {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #111111;
-    width: 1200px;
-    height: 800px;
-    margin: 0 auto;
-    border-radius: 12px;
-    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
 
 }
 
@@ -456,8 +475,4 @@ form h2 {
     color: #FFFFFF;
     font-size: 20px;
 
-}
-
-.formulario-cadastro {
-    margin: 50px;
 }

@@ -22,7 +22,7 @@
 
     <main class="formulario-container">
 
-        <form action="teladelogin.html">
+        <form action="tela-login.html">
 
             <h2>Cadastro</h2>
             <p>Preencha os dados para criar sua conta.</p>
@@ -55,17 +55,30 @@
 
             <div class="area-input">
 
-                <label for="email">E-mail</label>
+                <label for="telefone">Telefone</label>
 
                 <div class="input">
                     
+                    <i class="fa-solid fa-phone"></i>
+                    <input id="telefone" placeholder="Telefone" type="tel" name="telefone" required>
+
+                </div>
+
+            </div>
+
+            <div class="area-input">
+
+                <label for="email">E-mail</label>
+
+                <div class="input">
+
                     <i class="fa-solid fa-envelope"></i>
                     <input id="email" placeholder="E-mail" type="email" name="email" required>
 
                 </div>
 
             </div>
-
+            
             <div class="area-input">
 
                 <label for="senha">Senha</label>
@@ -74,19 +87,6 @@
 
                     <i class="fa-solid fa-lock"></i>
                     <input id="senha" placeholder="Senha" type="password" name="senha" required>
-
-                </div>
-
-            </div>
-            
-            <div class="area-input">
-
-                <label for="confirmarsenha">Confirmar senha</label>
-
-                <div class="input">
-
-                    <i class="fa-solid fa-lock"></i>
-                    <input type="password" placeholder="Confirmar senha" required>
 
                 </div>
 
@@ -121,9 +121,11 @@
             <div class="fazerlogin">
 
                 <p>Já possui conta? </p>
-                <a href="teladelogin.html">Fazer Login</a>
+                <a href="tela-login.html">Fazer Login</a>
 
             </div>
+
+            <a href="cadastro-oficina.html" class="cadastrar-oficina">Cadastrar Oficina</a>
             
         </form>
 

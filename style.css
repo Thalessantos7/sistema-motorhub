@@ -234,6 +234,42 @@ form p {
 
 }
 
+.servicos {
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+    
+}
+
+.servico-item {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #8B949E !important;
+    background: none !important;
+    -webkit-text-fill-color: #8B949E !important;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+.servico-item input {
+
+    width: 16px;
+    height: 16px;
+    accent-color: #FF1744;
+
+}
+
+.input label {
+
+    color: #8B949E;
+
+}
+
 .input {
 
     border: 2px solid black;
@@ -263,6 +299,12 @@ form p {
     display: flex;
     gap: 10px;
     margin-left: 5px;
+
+}
+
+.termos input, .lembrar input {
+
+    accent-color: #FF1744;
 
 }
 
@@ -392,7 +434,7 @@ form p {
 
 }
 
-.esqueci-senha {
+.esqueci-senha, .cadastrar-oficina, .cadastrar-cliente {
 
     text-align: center;
     text-decoration: none;
@@ -401,7 +443,7 @@ form p {
 
 }
 
-.esqueci-senha:hover {
+.esqueci-senha:hover, .cadastrar-oficina:hover, .cadastrar-cliente:hover {
 
     transform: translateY(-5px);
 

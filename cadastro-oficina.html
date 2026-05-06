@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Cadastro de Oficina - MotorHub</title>
+
+</head>
+
+<body>
+
+    <header id="topo">
+
+        <h1 id="logo">MotorHub</h1>
+        <p id="subtitulo">Seu hub automotivo favorito.</p>
+
+    </header>
+
+    <main class="formulario-container">
+
+        <form action="tela-login.html">
+
+            <h2>Cadastro de Oficina</h2>
+            <p>Preencha os dados para cadastrar sua oficina.</p>
+
+            <div class="area-input">
+
+                <label for="nome-oficina">Nome da Oficina</label>
+
+                <div class="input">
+
+                    <i class="fa-solid fa-user"></i>
+                    <input id="nome-oficina" placeholder="Nome da Oficina" type="text" name="nome-oficina" required>
+
+                </div>
+
+            </div>
+            
+            <div class="area-input">
+
+                <label for="cnpj">CNPJ</label>
+
+                <div class="input">
+
+                    <i class="fa-solid fa-user"></i>
+                    <input id="cnpj" placeholder="CNPJ" type="text" name="cnpj" required>
+
+                </div>
+            
+            </div>
+
+            <div class="area-input">
+
+                <label for="telefone">Telefone</label>
+
+                <div class="input">
+                    
+                    <i class="fa-solid fa-phone"></i>
+                    <input id="telefone" placeholder="Telefone" type="tel" name="telefone" required>
+
+                </div>
+
+            </div>
+
+            <div class="area-input">
+
+                <label for="email">E-mail</label>
+
+                <div class="input">
+
+                    <i class="fa-solid fa-envelope"></i>
+                    <input id="email" placeholder="E-mail" type="email" name="email" required>
+
+                </div>
+
+            </div>
+            
+            <div class="area-input">
+
+                <label for="senha">Senha</label>
+
+                <div class="input">
+
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Senha" required>
+
+                </div>
+
+            </div>
+
+            <div class="area-input">
+
+                <label>Serviços oferecidos</label>
+
+                <div class="servicos">
+
+                    <label class="servico-item">
+
+                        <input type="checkbox" name="servicos" value="Mecânica geral">
+                        Mecânica geral
+
+                    </label>
+
+                    <label class="servico-item">
+
+                        <input type="checkbox" name="servicos" value="Elétrica">
+                        Elétrica
+
+                    </label>
+
+                    <label class="servico-item">
+
+                        <input type="checkbox" name="servicos" value="Troca de óleo">
+                        Troca de óleo
+
+                    </label>
+
+                    <label class="servico-item">
+
+                        <input type="checkbox" name="servicos" value="Alinhamento">
+                        Alinhamento e balanceamento
+
+                    </label>
+
+                    <label class="servico-item">
+
+                        <input type="checkbox" name="servicos" value="Baterias">
+                        Baterias
+
+                    </label>
+
+                    <label class="servico-item">
+
+                        <input type="checkbox" name="servicos" value="Suspensão">
+                        Suspensão
+
+                    </label>
+
+                </div>
+
+            </div>
+
+            <div class="area-input">
+
+                <label for="cep">CEP</label>
+
+                <div class="input">
+                    
+                    <input id="cep" placeholder="CEP" type="text" name="cep" required>
+
+                </div>
+
+            </div>
+
+            <div class="area-input">
+
+                <label for="rua">Rua</label>
+
+                <div class="input">
+                    
+                    <input id="rua" placeholder="Rua" type="text" name="rua" required>
+
+                </div>
+
+            </div>
+
+            <div class="area-input">
+
+                <label for="numero">Número</label>
+
+                <div class="input">
+                    
+                    <input id="numero" placeholder="Número" type="number" name="numero" required>
+
+                </div>
+
+            </div>
+
+            <div class="area-input">
+
+                <label for="bairro">Bairro</label>
+
+                <div class="input">
+                    
+                    <input id="bairro" placeholder="Bairro" type="text" name="bairro" required>
+
+                </div>
+
+            </div>
+
+            <div class="area-input">
+
+                <label for="cidade">Cidade</label>
+
+                <div class="input">
+                    
+                    <input id="cidade" placeholder="Cidade" type="text" name="cidade" required>
+
+                </div>
+
+            </div>
+
+            <div class="area-input">
+
+                <label for="estado">Estado</label>
+
+                <div class="input">
+                    
+                    <input id="estado" placeholder="Estado" type="text" name="estado" required>
+
+                </div>
+
+            </div>
+
+            <div class="termos">
+
+                <input type="checkbox" id="termos" required>
+                <label for="termos">Aceito os termos de uso</label>
+                
+            </div>
+            
+            <div class="area-botao-cadastro">
+
+                <button type="submit" class="botao-cadastro">Fazer cadastro</button>
+
+            </div>
+
+            <div class="fazerlogin">
+
+                <p>Já possui conta? </p>
+                <a href="tela-login.html">Fazer Login</a>
+
+            </div>
+
+            <a href="index.html" class="cadastrar-cliente">Cadastrar Cliente</a>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>

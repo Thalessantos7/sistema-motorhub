@@ -8,8 +8,8 @@
 
 body {
 
-    font-family: 'Times New Roman', sans-serif;
-    background: #1A1A1A;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0D1117;
 
 }
 
@@ -19,16 +19,11 @@ body {
 
     display: flex;
     flex-direction: column;
-    background: #111111;
-    height: 150px;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    background: #0D1117;
+    height: 120px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
     width: 100%;
-    position: relative;
-    left: 0;
-    top: 0;
 
 }
 
@@ -37,44 +32,55 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #111111;
-    height: 150px;
+    background: #0D1117;
+    height: 120px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
     width: 100%;
     position: fixed;
-    left: 0;
     top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 
 }
 
 #logo {
     
-    color: #ff0000;
+    background: linear-gradient(135deg, #FF1744 0%, #FF5722 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 70px;
+    font-weight: 800;
 
 }
 
 #logo-pagina-inicial {
 
-    color: #ff0000;
+    background: linear-gradient(135deg, #FF1744 0%, #FF5722 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
     font-size: 70px;
     position: absolute;
     left: 40px;
+    bottom: 30px;
 
 }
 
 #subtitulo {
 
-    color: #ffffff;
+    color: #8B949E;
+    position: absolute;
+    top: 90px;
 
 }
 
 #subtitulo-pagina-inicial {
 
-    color: #ffffff;
+    color: #8B949E;
     position: absolute;
     left: 100px;
-    top: 110px;
+    bottom: 20px;
 
 }
 
@@ -87,9 +93,9 @@ body {
 
 .menu-container a {
 
-    color: #ff0000;
+    color: #F0F6FC;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
 
 }
 
@@ -97,6 +103,31 @@ body {
 
     color: #ffffff;
     transform: translateY(-5px);
+    background: linear-gradient(135deg, #FF1744 0%, #FF5722 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.perfil-container i {
+
+    background: linear-gradient(135deg, #FF1744 0%, #FF5722 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    position: absolute;
+    right: 15vh;
+    top: 40px;
+
+}
+
+.perfil-container p {
+
+    color: #F0F6FC;
+    font-size: 20px;
+    position: absolute;
+    right: 7vh;
+    top: 45px;
 
 }
 
@@ -126,22 +157,29 @@ main {
 
 #boas-vindas {
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 4rem 2rem;
+    border-radius: 24px;
+    margin: 2rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 
 }
 
 #boas-vindas h2 {
 
     color: #ff0000;
-    font-size: 30px;
+    font-size: 40px;
+    background: linear-gradient(135deg, #FF1744 0%, #FF5722 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 
 #boas-vindas p {
 
-    color: #ffffff;
+    color: #8B949E;
     font-size: 20px;
 
 }
@@ -149,42 +187,50 @@ main {
 form {
 
     display: flex;
-    background: #111111;
+    background: rgba(21, 27, 38, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     flex-direction: column;
-    width: 500px;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    width: 480px;
+    padding: 3rem;
+    border-radius: 24px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
     
 }
 
 form h2 {
 
-    display: flex;
-    justify-content: center;
-    color: #ff0000;
+    text-align: center;
+    margin-top: -30px;
+    background: linear-gradient(135deg, #FF1744 0%, #FF5722 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 30px;
+    font-weight: 800;
 
 }
 
 form p {
 
-    display: flex;
-    justify-content: center;
-    color: #ffffff;
+    text-align: center;
+    color: #8B949E;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 
 }
 
 .area-input {
 
-    margin: 10px;
+    margin-bottom: 10px;
 
 }
 
 .area-input label {
 
-    color: #ff0000;
-    font-size: 20px;
+    background: linear-gradient(135deg, #FF1744 0%, #FF5722 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 0.95rem;
+    font-weight: 600;
 
 }
 
@@ -193,7 +239,7 @@ form p {
     border: 2px solid black;
     border-radius: 12px;
     padding: 10px;
-    background: white;
+    background: rgba(255, 255, 255, 0.05);
 
 }
 
@@ -205,34 +251,26 @@ form p {
 
 .input input {
 
+    background: transparent;
     border: none;
     outline: none;
     font-size: 20px;
 
 }
 
-.termos {
+.termos, .lembrar {
 
     display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 12px;
-    margin-left: 20px;
-
-}
-
-.termos input {
-
-    width: auto;
-    margin-bottom: 0;
+    gap: 10px;
+    margin-left: 5px;
 
 }
 
 .termos label {
 
-    margin-bottom: 0;
-    color: #F4F4F4;
-    font-weight: 400;
+    background: linear-gradient(135deg, #FF1744 0%, #FF5722 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     
 }
 
@@ -246,7 +284,7 @@ form p {
 
 .botao-cadastro {
 
-    background: #505050;
+    background: linear-gradient(135deg, #FF1744 0%, #FF5722 100%);
     border-radius: 12px;
     width: 250px;
     height: 40px;
@@ -257,7 +295,6 @@ form p {
 
 .botao-cadastro:hover {
 
-    background: #ff0000;
     transform: translateY(-5px);
 
 }
@@ -271,9 +308,17 @@ form p {
 
 }
 
+.fazerlogin p {
+
+    color: #8B949E;
+
+}
+
 .fazerlogin a {
 
-    color: #ff0000;
+    background: linear-gradient(135deg, #FF1744 0%, #FF5722 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-decoration: none;
 
 }
@@ -284,17 +329,11 @@ form p {
 
 }
 
-.lembrar {
-
-    display: flex;
-    gap: 10px;
-    margin-left: 20px;
-
-}
-
 .lembrar label {
 
-    color: #ffffff;
+    background: linear-gradient(135deg, #FF1744 0%, #FF5722 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 
@@ -308,7 +347,7 @@ form p {
 
 .botao-login {
 
-    background: #505050;
+    background: linear-gradient(135deg, #FF1744 0%, #FF5722 100%);
     border-radius: 12px;
     width: 250px;
     height: 40px;
@@ -318,8 +357,7 @@ form p {
 }
 
 .botao-login:hover {
-
-    background: #ff0000;
+    
     transform: translateY(-5px);
 
 }
@@ -335,7 +373,9 @@ form p {
 
 .cadastrar-se a {
 
-    color: #ff0000;
+    background: linear-gradient(135deg, #FF1744 0%, #FF5722 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-decoration: none;
 
 }
@@ -346,12 +386,18 @@ form p {
 
 }
 
+.cadastrar-se p {
+
+    color: #8B949E;
+
+}
+
 .esqueci-senha {
 
-    display: flex;
-    justify-content: center;
+    text-align: center;
     text-decoration: none;
     color: #505050;
+    margin-top: -20px;
 
 }
 
@@ -366,7 +412,7 @@ form p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #111111;
+    background:  #21262D;
     width: 1200px;
     height: 800px;
     margin: 0 auto;
@@ -385,9 +431,19 @@ form p {
 
 #barra-pesquisa {
 
-    width: 500px;
-    height: 40px;
-    border-radius: 12px;
+    width: 600px;
+    height: 60px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    background: rgba(255, 255, 255, 0.08);
+    font-size: 1.1rem;
+    backdrop-filter: blur(20px);
+
+}
+
+#barra-pesquisa::placeholder {
+
+    color: #8B949E;
 
 }
 
@@ -408,36 +464,45 @@ form p {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    background: #1A1A1A;
+    background: #161B22;
     width: 300px;
     height: 300px;
-    border-radius: 12px;
-    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
 
 }
 
 .card:hover {
 
     transform: translateY(-5px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
 
 }
 
 .card h2 {
 
-    color: #FF0000;
+    background: linear-gradient(135deg, #FF1744 0%, #FF5722 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 20px;
 
 }
 
-.card p, span {
+.card p {
 
-    color: #FFFFFF;
+    color: #8B949E;
+
+}
+
+.card span {
+
+    color: #ffff00;
 
 }
 
 .card button {
 
-    background: #505050;
+    background: linear-gradient(135deg, #FF1744 0%, #FF5722 100%);
     cursor: pointer;
     color: #FFFFFF;
     width: 150px;
@@ -448,7 +513,6 @@ form p {
 
 .card button:hover {
 
-    background: #FF0000;
     transform: translateY(-5px);
 
 }
@@ -465,14 +529,16 @@ form p {
 
 #agendamentos h2 {
 
-    color: #FF0000;
+    background: linear-gradient(135deg, #FF1744 0%, #FF5722 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 40px;
 
 }
 
 #agendamentos p {
 
-    color: #FFFFFF;
+    color: #8B949E;
     font-size: 20px;
 
 }

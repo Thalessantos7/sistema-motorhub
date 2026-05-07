@@ -121,13 +121,22 @@ body {
 
 }
 
-.perfil-container p {
+.perfil-container button {
 
     color: #F0F6FC;
+    background: none;
+    outline: none;
+    border: none;
     font-size: 20px;
     position: absolute;
     right: 7vh;
-    top: 45px;
+    top: 48px;
+
+}
+
+.perfil-container button:hover {
+
+    transform: translateY(-5px);
 
 }
 
@@ -539,11 +548,15 @@ form p {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    background: #161B22;
     width: 300px;
     height: 300px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 5px solid transparent;
     border-radius: 20px;
+
+    background:
+
+        linear-gradient(#161B22, #161B22) padding-box,
+        linear-gradient(180deg, #FF1744, #FF5722) border-box;
 
 }
 

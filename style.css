@@ -387,7 +387,7 @@ form p {
 
 }
 
-.botao-login {
+.botao-login, .registrar-veiculo {
 
     background: linear-gradient(135deg, #FF1744 0%, #FF5722 100%);
     border-radius: 12px;
@@ -398,9 +398,28 @@ form p {
 
 }
 
-.botao-login:hover {
+.botao-login:hover, .botao-enviarlink:hover, .registrar-veiculo:hover {
     
     transform: translateY(-5px);
+
+}
+
+.area-enviarlink {
+
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+.botao-enviarlink {
+
+    background: linear-gradient(135deg, #FF1744 0%, #FF5722 100%);
+    border-radius: 12px;
+    width: 250px;
+    height: 40px;
+    color: #ffffff;
+    font-size: 20px;
 
 }
 
@@ -444,6 +463,20 @@ form p {
 }
 
 .esqueci-senha:hover, .cadastrar-oficina:hover, .cadastrar-cliente:hover {
+
+    transform: translateY(-5px);
+
+}
+
+.cancelar {
+
+    text-align: center;
+    text-decoration: none;
+    color: #505050;
+
+}
+
+.cancelar:hover {
 
     transform: translateY(-5px);
 
@@ -556,6 +589,117 @@ form p {
 .card button:hover {
 
     transform: translateY(-5px);
+
+}
+
+
+#meus-veiculos {
+
+    text-align: center;
+
+}
+
+
+#meus-veiculos h2 {
+
+    color: #ff0000;
+    font-size: 40px;
+    background: linear-gradient(135deg, #FF1744 0%, #FF5722 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+#meus-veiculos p {
+
+    color: #8B949E;
+    font-size: 20px;
+
+}
+
+.container {
+
+    width: 100%;
+
+}
+
+.card-veiculo {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    background: #161B22;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.06);
+    overflow: hidden;
+
+}
+
+.card-veiculo:hover{
+
+    transform: translateY(-10px);
+
+}
+
+.titulo {
+
+    font-size: 16px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #FF1744 0%, #FF5722 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 4px;
+
+}
+
+.valor {
+
+    font-size: 14px;
+    color: #8B949E;
+
+}
+
+.lista-servicos {
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+
+}
+
+.lista-servicos li {
+    
+    background: rgba(255,255,255,0.08);
+    color: #F0F6FC;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: 13px;
+
+}
+
+.area-registrar-veiculo {
+
+    display: flex;
+    margin-top: -6vh;
+    margin-bottom: 50px;
+
+}
+
+.area-cards-veiculos {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 30px;
+    margin: 40px auto;
+    background: #21262D;
+    border-radius: 24px;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.3);
 
 }
 

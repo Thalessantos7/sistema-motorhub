@@ -316,7 +316,7 @@ form p {
     
 }
 
-.area-botao-cadastro {
+.area-botao-cadastro, .container-registrar-veiculo {
 
     display: flex;
     justify-content: center;
@@ -324,7 +324,7 @@ form p {
 
 }
 
-.botao-cadastro {
+.botao-cadastro, .registrar-veiculo {
 
     background: linear-gradient(135deg, #FF1744 0%, #FF5722 100%);
     border-radius: 12px;

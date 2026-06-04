@@ -15,7 +15,7 @@ body {
 
 /* Header */
 
-#topo {
+.topo {
 
     display: flex;
     flex-direction: column;
@@ -27,7 +27,7 @@ body {
 
 }
 
-#topo-pagina-inicial {
+.topo-pagina-inicial {
 
     display: flex;
     justify-content: center;
@@ -44,7 +44,7 @@ body {
 
 }
 
-#logo {
+.logo {
     
     background: linear-gradient(135deg, #FF1744 0%, #FF5722 100%);
     -webkit-background-clip: text;
@@ -54,7 +54,7 @@ body {
 
 }
 
-#logo-pagina-inicial {
+.logo-pagina-inicial {
 
     background: linear-gradient(135deg, #FF1744 0%, #FF5722 100%);
     -webkit-background-clip: text;
@@ -67,7 +67,7 @@ body {
 
 }
 
-#subtitulo {
+.subtitulo {
 
     color: #8B949E;
     position: absolute;
@@ -75,7 +75,7 @@ body {
 
 }
 
-#subtitulo-pagina-inicial {
+.subtitulo-pagina-inicial {
 
     color: #8B949E;
     position: absolute;
@@ -288,6 +288,22 @@ form p {
 
 }
 
+#mostrarSenha {
+    
+    border: none;
+    background: transparent;
+    color: #888;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+#mostrarSenha:hover {
+
+    color: #fff;
+
+}
+
 .input i {
 
     margin-right : 5px;
@@ -300,6 +316,13 @@ form p {
     border: none;
     outline: none;
     font-size: 20px;
+    color: #F0F6FC;
+
+}
+
+.input input::placeholder {
+
+    color: #8B949E;
 
 }
 

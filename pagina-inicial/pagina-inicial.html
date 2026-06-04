@@ -13,24 +13,24 @@
 
 <body>
 
-    <header id="topo-pagina-inicial">
+    <header class="topo-pagina-inicial">
 
-        <h1 id="logo-pagina-inicial">MotorHub</h1>
-        <p id="subtitulo-pagina-inicial">Seu hub automotivo favorito.</p>      
+        <h1 class="logo-pagina-inicial">MotorHub</h1>
+        <p class="subtitulo-pagina-inicial">Seu hub automotivo favorito.</p>      
 
         <nav class="menu-container">
 
             <a href="pagina-inicial.html">Início</a>
             <a href="meus-veiculos.html">Meus veículos</a>
             <a href="#agendamentos">Meus agendamentos</a>
-            <a href="../login/tela-login.html">Sair</a>
+            <a class="botao-sair">Sair</a>
 
         </nav>
 
         <div class="perfil-container">
 
             <i class="fa-solid fa-circle-user"></i>
-            <button type="submit">Usuário</button>
+            <button type="submit" id="nome-usuario">Usuário</button>
 
         </div>
         
@@ -132,6 +132,20 @@
         </section>
 
     </main>
+
+    <script src="../script.js"></script>
+
+    <script>
+
+        const sessao = verificarAcesso("usuario")
+
+        if (sessao) {
+
+            document.getElementById("nome-usuario").textContent = sessao.nome
+
+        }
+
+    </script>
     
 </body>
 

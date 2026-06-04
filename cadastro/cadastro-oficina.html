@@ -13,16 +13,16 @@
 
 <body>
 
-    <header id="topo">
+    <header class="topo">
 
-        <h1 id="logo">MotorHub</h1>
-        <p id="subtitulo">Seu hub automotivo favorito.</p>
+        <h1 class="logo">MotorHub</h1>
+        <p class="subtitulo">Seu hub automotivo favorito.</p>
 
     </header>
 
     <main class="formulario-container">
 
-        <form action="../login/tela-login.html">
+        <form id="formulario-cadastro-oficina">
 
             <h2>Cadastro de Oficina</h2>
             <p>Preencha os dados para cadastrar sua oficina.</p>
@@ -86,7 +86,14 @@
                 <div class="input">
 
                     <i class="fa-solid fa-lock"></i>
-                    <input type="password" placeholder="Senha" required>
+
+                    <input id="senha" placeholder="Senha" type="password" name="senha" required>
+
+                    <button type="button" id="mostrarSenha">
+                        
+                        <i class="fa-solid fa-eye"></i>
+
+                    </button>
 
                 </div>
 
@@ -232,15 +239,17 @@
             <div class="fazerlogin">
 
                 <p>Já possui conta? </p>
-                <a href="../login/tela-login.html">Fazer Login</a>
+                <a href="../index.html">Fazer Login</a>
 
             </div>
 
-            <a href="../index.html" class="cadastrar-cliente">Cadastrar Cliente</a>
+            <a href="cadastro-usuario.html" class="cadastrar-cliente">Cadastrar Cliente</a>
 
         </form>
 
     </main>
+
+    <script src="../script.js"></script>
 
 </body>
 
